@@ -1,0 +1,49 @@
+.empty_div {
+    min-height: 655px;
+    min-width: 1200px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    visibility: hidden;
+}
+
+.container {
+    min-height: 655px;
+    min-width: 1200px;
+    max-width: 1500px;  
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+}
+
+.layer img {
+    display: inline-block;
+    position: absolute;
+}
+
+
+.sun {
+    max-height: 200px;
+    max-width: 200px;  
+    top: 200px;
+    transform: translate(-50%);
+}
+
+.back_clouds {
+    max-width: 800px;  
+    top: 260px;
+    left: 140px;
+}
+
+.middle_clouds {
+    max-width: 800px;
+    top: 380px;
+    left: 280px;
+}
+
+.hill {
+    max-width: 550px;
+    top: 480px;
+    transform: translate(60%);
+}

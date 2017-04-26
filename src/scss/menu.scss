@@ -1,0 +1,52 @@
+.menu_wrapper {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    //top: 0;
+    background-color: $salmon_color;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.menu_items {
+    display: none;
+}
+
+#ham_wrap {
+    display: block;
+    position: relative;
+    left: 15px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    
+    a { 
+        display: block;
+        width: 35px;
+        height: 40px;
+
+        .hamburger {
+            border-top: 4px solid #fff;
+            position: relative;
+            top: 10px;
+            display: block;
+        }
+
+        .hamburger::before {
+            top: 10px;
+            border-top: 4px solid #fff;
+            position: absolute;
+
+            display: block;
+            content: "";
+        }
+
+        .hamburger::after {
+            border-top: 4px solid #fff;
+            top: 22px;
+            position: absolute;
+            display: block;
+            content: "";
+        }
+    }
+}

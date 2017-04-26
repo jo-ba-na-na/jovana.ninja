@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+$h_font: 'Varela Round', sans-serif;
+$p_font: 'Nunito', sans-serif;
+
+$salmon_color: #F77A76;
+
+
+@mixin h1_font_style($font_size, $font_color, $font_weight) {
+	font-size: $font_size;
+	font-family: $h_font;
+	color: $font_color;
+    font-weight: $font_weight;
+}
+
+@mixin p_font_style($font_size, $font_color, $font_weight) {
+	font-size: $font_size;
+	font-family: $p_font;
+	color: $font_color;
+    font-weight: $font_weight;
+}
+
