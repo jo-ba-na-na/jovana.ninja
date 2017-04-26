@@ -12,37 +12,40 @@
         <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="body_wrapper">
-            <div class="menu_wrapper">
-                <nav>
-                    <ul>
-                        {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
-                        <li class="menu_items"><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="about/index.html">about</a></li>
-                        <li class="menu_items"><a {% if active_page == "showcase" %} class="active" {% endif %} title="showcase" href="showcase/index.html">showcase</a></li>
-                        <li class="menu_items"><a {% if active_page == "contact" %} class="active" {% endif %} title="contact" href="contact/index.html">contact</a></li>
-                        <li id="ham_wrap"><a><span class="hamburger"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        
-            <div class="middle_content_wrapper">
-                {% block page_content %}{% endblock %}
-            </div>
-
-            <footer>
-                <nav>
-                    <ul>
-                        {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
-                        <li><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="about/index.html">about</a></li>
-                        <li><a {% if active_page == "showcase" %} class="active" {% endif %} title="showcase" href="showcase/index.html">showcase</a></li>
-                        <li><a {% if active_page == "contact" %} class="active" {% endif %} title="contact" href="contact/index.html">contact</a></li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    2017 &copy; www.jovana.ninja
-                </div>
-            </footer>
+        <div class="menu_wrapper">
+            <nav>
+                <ul>
+                    {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
+                    <li class="menu_items"><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="about/index.html">about</a></li>
+                    <li class="menu_items"><a {% if active_page == "showcase" %} class="active" {% endif %} title="showcase" href="showcase/index.html">showcase</a></li>
+                    <li class="menu_items"><a {% if active_page == "contact" %} class="active" {% endif %} title="contact" href="contact/index.html">contact</a></li>
+                    <li id="ham_wrap"><a><span class="hamburger"></span></a></li>
+                </ul>
+            </nav>
         </div>
+        
+        <div class="middle_content_wrapper">
+            {% block page_content %}{% endblock %}
+        </div>
+
+        <footer>
+            <div class="footer_img">
+            </div>
+            <nav>
+                <ul>
+                    {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
+                    <li><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="about/index.html">about</a></li>
+                    <li><a {% if active_page == "showcase" %} class="active" {% endif %} title="showcase" href="showcase/index.html">showcase</a></li>
+                    <li><a {% if active_page == "contact" %} class="active" {% endif %} title="contact" href="contact/index.html">contact</a></li>
+                </ul>
+            </nav>
+            <p>in development...</p>
+            <div class="copyright">
+                <p>2017 &copy; www.jovana.ninja</p>
+            </div>
+            
+        </footer>
+        
         {% block scripts %}{% endblock %}
     </body>
 </html>

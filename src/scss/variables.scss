@@ -5,9 +5,12 @@ $h_font: 'Varela Round', sans-serif;
 $p_font: 'Nunito', sans-serif;
 
 $salmon_color: #F77A76;
+$violet: #9e005d;
+$light_grey: #bcbcbc;
+$dark_grey: #373131;
 
 
-@mixin h1_font_style($font_size, $font_color, $font_weight) {
+@mixin h_font_style($font_size, $font_color, $font_weight) {
 	font-size: $font_size;
 	font-family: $h_font;
 	color: $font_color;

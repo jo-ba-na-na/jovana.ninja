@@ -1,5 +1,5 @@
 .empty_div {
-    min-height: 655px;
+    min-height: 600px;
     min-width: 1200px;
     max-width: 1500px;
     margin: 0 auto;
@@ -9,7 +9,7 @@
 }
 
 .container {
-    min-height: 655px;
+    min-height: 600px;
     min-width: 1200px;
     max-width: 1500px;  
     margin: 0 auto;
@@ -31,19 +31,19 @@
 }
 
 .back_clouds {
-    max-width: 800px;  
-    top: 260px;
-    left: 140px;
+    max-width: 800px;
+    top: 280px;
+    left: 120px;
 }
 
 .middle_clouds {
     max-width: 800px;
-    top: 380px;
-    left: 280px;
+    top: 480px;
+    left: 380px;
 }
 
 .hill {
-    max-width: 550px;
-    top: 480px;
-    transform: translate(60%);
+    max-width: 600px;
+    top: 490px;
+    transform: translate(50%);
 }
