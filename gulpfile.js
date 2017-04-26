@@ -95,7 +95,7 @@ gulp.task('js', js);
 gulp.task('build:js', ['clear:js'], js);
 
 function js() {
-    return gulp.src('./src/js/**/*.js')
+    return gulp.src(['./src/js/**/*.js', require.resolve('parallax-js/deploy/parallax.js')])
         .pipe(plumber())
         .pipe(gulpif(util.env.prod, uglify()))
         .pipe(gulp.dest('./public/js'))
@@ -105,7 +105,7 @@ function js() {
 // --- tasks: html clear:html build:html watch:html ------------------------------------------------
 
 gulp.task('clear:html', function() {
-    return del(['./public/html']);
+    return del(['./public/**/*.html']);
 });
 
 gulp.task('watch:html', ['html'], function() {
@@ -117,10 +117,14 @@ gulp.task('html', html);
 gulp.task('build:html', ['clear:html'], html);
 
 function html() {
-    return gulp.src('./src/html/**/*.swig')
+    return gulp.src('src/html/pages/**/*.swig')
         .pipe(plumber())
-        .pipe(swig())
-        .pipe(gulp.dest('./public/html'))
+        .pipe(swig({
+            defaults: {
+            cache: false,
+            },
+        }))
+        .pipe(gulp.dest('./public'))
         .pipe(connect.reload());
 }
 
