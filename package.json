@@ -21,6 +21,7 @@
     "gulp-swig": "^0.8.0",
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.8",
-    "node-normalize-scss": "^1.4.0"
+    "node-normalize-scss": "^1.4.0",
+    "parallax-js": "1.0.0"
   }
 }
