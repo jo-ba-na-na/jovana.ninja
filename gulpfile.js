@@ -48,7 +48,12 @@ function css() {
         .pipe(plumber())
         .pipe(sass({
             // make @import "normalize"; work correctly
-            includePaths: require('node-normalize-scss').includePaths,
+            //includePaths: require('node-normalize-scss').includePaths,
+            
+            includePaths: require('node-normalize-scss').with(
+                path.dirname(require.resolve('node-waves/src/scss/waves.scss'))
+            ),
+
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
@@ -95,7 +100,7 @@ gulp.task('js', js);
 gulp.task('build:js', ['clear:js'], js);
 
 function js() {
-    return gulp.src(['./src/js/**/*.js', require.resolve('parallax-js/deploy/parallax.js')])
+    return gulp.src(['./src/js/**/*.js', require.resolve('parallax-js/deploy/parallax.js'), require.resolve('node-waves')])
         .pipe(plumber())
         .pipe(gulpif(util.env.prod, uglify()))
         .pipe(gulp.dest('./public/js'))

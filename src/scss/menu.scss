@@ -2,6 +2,9 @@
     width: 100%;
     height: 70px;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: $salmon_color;
     opacity: 0.8;
     margin: 0;
@@ -15,37 +18,78 @@
     display: block;
     position: relative;
     left: 15px;
-    top: 20px;
+    top: 10px;
     left: 20px;
     cursor: pointer;
+    outline: none;
+    width: 55px;
+    height: 50px;
+    border: 3px solid $salmon_color;
+    border-radius: 10px;
+    
     
     a { 
-        display: block;
-        width: 35px;
-        height: 40px;
+        display: inline-block;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 55px;
+        height: 50px;
 
         .hamburger {
             border-top: 4px solid #fff;
             position: relative;
-            top: 10px;
+            top: 9px;
+            width: 35px;
             display: block;
+            margin: 0 auto;
         }
 
         .hamburger::before {
-            top: 10px;
+            top: 9px;
             border-top: 4px solid #fff;
+            width: 35px;
             position: absolute;
-
             display: block;
             content: "";
         }
 
         .hamburger::after {
             border-top: 4px solid #fff;
-            top: 22px;
+            top: 21px;
+            width: 35px;
             position: absolute;
             display: block;
             content: "";
         }
     }
 }
+
+.menu_btn {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 180px;
+    @include h_font_style(20px, #fff, 400);
+    background-color: transparent;
+    padding: 5px 10px;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    margin: 0;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+} 
+
+
+//-------   ripple effect styles
+
+ .waves-effect .waves-ripple {
+    background: rgba(255, 255, 255, 0.2);
+    background: radial-gradient(255, 255, 255, 0.2) 0, 
+                        rgba(255, 255, 255, 0.7) 40%, 
+                        rgba(255, 255, 255, 0.4) 50%, 
+                        rgba(255, 255, 255, 0.3) 60%, 
+                        rgba(255, 255, 255, 0) 70%;
+    transition: all 0.3s ease-out;
+ }

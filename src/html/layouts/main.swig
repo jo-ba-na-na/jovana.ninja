@@ -9,6 +9,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="google-site-verification" content="" />
+        <meta name="msapplication-tap-highlight" content="no"/>
         <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -22,6 +23,7 @@
                     <li id="ham_wrap"><a><span class="hamburger"></span></a></li>
                 </ul>
             </nav>
+            <button class="menu_btn">Jovana Skoric</button>
         </div>
         
         <div class="middle_content_wrapper">
@@ -35,7 +37,6 @@
                 <ul>
                     {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
                     <li><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="about/index.html">about</a></li>
-                    <li><a {% if active_page == "showcase" %} class="active" {% endif %} title="showcase" href="showcase/index.html">showcase</a></li>
                     <li><a {% if active_page == "contact" %} class="active" {% endif %} title="contact" href="contact/index.html">contact</a></li>
                 </ul>
             </nav>
@@ -46,6 +47,8 @@
             
         </footer>
         
+        <script src="../js/waves.js"></script>
+        <script src="../js/menu.js"></script>
         {% block scripts %}{% endblock %}
     </body>
 </html>
