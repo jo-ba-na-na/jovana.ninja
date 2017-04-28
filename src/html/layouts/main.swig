@@ -24,7 +24,7 @@
         
     <div id="menu" class="menu">
         <div class="menu_bar">
-            <button class="menu_btn">Jovana Skoric</button>
+            <button class="menu_btn" href="/about/index.html">Jovana Skoric</button>
         </div>
         
         <a id="ham_wrap"><span class="hamburger"></span></a>
@@ -33,7 +33,7 @@
             <nav>
                 <ul>
                     {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
-                    <li class="menu_items"><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="about/index.html">about</a></li>
+                    <li class="menu_items"><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="/about/index.html">about</a></li>
                     <li class="menu_items">
                         <a {% if active_page == "projects" %} class="active" {% endif %} title="projects" href="#">projects</a>
                         <ul>
