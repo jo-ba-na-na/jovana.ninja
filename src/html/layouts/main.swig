@@ -3,14 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>{% block page_title %}{% endblock %}</title>
-        <meta property="og:image" content="">
-		<meta property="og:description" content="">
-		<meta property="og:title" content="">
+        <meta property="og:image" content="https://jovana.ninja/images/windmill-day.png"/>
+		<meta property="og:description" content="Concerning frontend and JS related technologies."/>
+		<meta property="og:title" content="Jovana Skoric - web dev portfolio"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="google-site-verification" content="" />
-        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="google-site-verification" content="">
+        <meta name="msapplication-tap-highlight" content="no">
         <link href="/css/style.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicons/manifest.json">
+        <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#9e005d">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         
