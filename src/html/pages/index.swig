@@ -1,6 +1,6 @@
 {% extends '../layouts/main.swig' %}
 
-{% block page_title %} JS {% endblock %}
+{% block page_title %} Jovana Skoric {% endblock %}
 
 			{% block page_content %}
 				<div id="container" class="container">
