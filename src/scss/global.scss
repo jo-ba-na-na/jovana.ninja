@@ -15,13 +15,15 @@ h1, h2, h3, ul, ul li {
 }
 
 ul li {
-	list-style-type: none;
+    list-style-type: none;
 	display: block;
 }
 
 
 body {
     width: 100%;
+    height: 100%; 
+    min-height: 100%;
     text-align: center;
     background: fixed no-repeat linear-gradient(to bottom, rgba(247,122,118, 0.7), rgba(247,122,118, 0.22) 10%, #fff);
     background-repeat: repeat-x;
@@ -34,4 +36,14 @@ body {
     max-width: 1200px;
 }
 
+//-------   ripple effect styles
 
+ .waves-effect .waves-ripple {
+    background: rgba(255, 255, 255, 0.2);
+    background: radial-gradient(255, 255, 255, 0.2) 0, 
+                        rgba(255, 255, 255, 0.7) 40%, 
+                        rgba(255, 255, 255, 0.4) 50%, 
+                        rgba(255, 255, 255, 0.3) 60%, 
+                        rgba(255, 255, 255, 0) 70%;
+    transition: all 0.3s ease-out;
+ }
