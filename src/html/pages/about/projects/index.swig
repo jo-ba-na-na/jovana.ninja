@@ -1,4 +1,4 @@
-{% extends '../../layouts/main.swig' %}
+{% extends '../../../layouts/main.swig' %}
 
 {% block page_title %} Projects | JS {% endblock %}
             

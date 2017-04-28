@@ -24,7 +24,7 @@
         
     <div id="menu" class="menu">
         <div class="menu_bar">
-            <button class="menu_btn" href="/about/index.html">Jovana Skoric</button>
+            <a href="/index.html"><button class="menu_btn">Jovana Skoric</button></a>
         </div>
         
         <a id="ham_wrap"><span class="hamburger"></span></a>

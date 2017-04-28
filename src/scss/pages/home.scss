@@ -42,8 +42,17 @@
     left: 380px;
 }
 
-.hill {
+svg.hill {
     max-width: 600px;
+    min-width: 600px;
+    position: fixed;
     top: 490px;
     transform: translate(50%);
+
+
+    #sails path {
+        fill: #000;
+        transition: rotate(0deg, 360deg);
+       
+    }
 }
