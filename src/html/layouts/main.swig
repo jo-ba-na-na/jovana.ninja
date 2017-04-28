@@ -54,7 +54,7 @@
                 <p>let's connect!</p>
                 <div class="footer_icons">
                     
-                    <a class="icon">
+                    <a class="icon" title="GutHub" href="https://github.com/joninja" target="_blank">
                         <svg title="github" width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="gihub" transform="translate(2.000000, 2.000000)">
@@ -65,7 +65,7 @@
                         </svg>
                     </a>
                     
-                    <a class="icon">
+                    <a class="icon" title="Twitter" href="https://twitter.com/jo__ninja" target="_blank">
                         <svg title="twitter" width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="twitter" transform="translate(2.000000, 2.000000)">
@@ -76,10 +76,10 @@
                         </svg>
                     </a>
 
-                    <a class="icon">
-                        <svg title="mail" width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a class="icon" title="Email" href="mailto:me@jovana.ninja" target="_blank">
+                        <svg title="email" width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="mail" transform="translate(2.000000, 2.000000)">
+                                <g id="email" transform="translate(2.000000, 2.000000)">
                                     <path d="M32.1927857,39.1373571 L55.8443571,57.8719286 C56.9168571,58.7205 58.3947857,59.0976429 59.8302857,59.0269286 C61.2634286,59.0976429 62.7413571,58.7228571 63.8138571,57.8719286 L87.4654286,39.1373571 C89.3605714,37.6452857 88.9315714,36.4219286 86.5272857,36.4219286 L59.8326429,36.4219286 L33.138,36.4219286 C30.7313571,36.4219286 30.3023571,37.6452857 32.1927857,39.1373571 Z M89.1743571,44.0802857 L63.3282857,63.7035 C62.3618571,64.4295 61.0960714,64.7830714 59.835,64.7665714 C58.5715714,64.7830714 57.3057857,64.4271429 56.3393571,63.7035 L30.4885714,44.0802857 C28.5698571,42.6259286 27,43.4061429 27,45.8127857 L27,78.009 C27,80.4156429 28.9705714,82.3862143 31.3772143,82.3862143 L59.8302857,82.3862143 L88.2857143,82.3862143 C90.6923571,82.3862143 92.6629286,80.4156429 92.6629286,78.009 L92.6629286,45.8127857 C92.6629286,43.4061429 91.0930714,42.6259286 89.1743571,44.0802857 Z" fill="#cccccc"></path>
                                     <circle id="Oval-1" stroke="#cccccc" stroke-width="4" cx="60" cy="60" r="60"></circle>
                                 </g>
@@ -87,7 +87,7 @@
                         </svg>
                     </a>
 
-                    <a class="icon">
+                    <a class="icon" title="LinkedIn" href="https://www.linkedin.com/in/jovanaskoric" target="_blank">
                         <svg title="linkedin" width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="linkedin" transform="translate(2.000000, 2.000000)">
@@ -100,7 +100,7 @@
 
                 </div>
                 <div class="copyright">
-                    <p>2017 &copy; www.jovana.ninja</p>
+                    <p class="copy">2017 &copy; www.jovana.ninja</p>
                 </div>
             </div>          
         </footer>
