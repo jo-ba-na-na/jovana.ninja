@@ -1,0 +1,22 @@
+a.icon {
+    margin: 15px;
+    display: inline-block;
+}
+
+a.icon svg {
+    display: block;
+    width: 80px; 
+    height: 80px;
+}
+
+a.icon:hover svg {
+    path {
+        fill: $violet;
+        opacity: 0.5;
+    }
+
+    circle {
+        stroke: $violet;
+        opacity: 0.5;
+    }
+}
