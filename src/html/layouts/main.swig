@@ -29,10 +29,10 @@
                     <li class="menu_items">
                         <a {% if active_page == "projects" %} class="active" {% endif %} title="projects" href="#">projects</a>
                         <ul>
-                            <li class="project"><a class="" title="Astal" href="www.astal.rs">Astal</a></li>
-                            <li class="project"><a class="" title="Rujji Design" href="www.rujji.desing">Rujji Design</a></li>
-                            <li class="project"><a class="" title="Spaceeey" href="spaceeey.jovana.ninja">Spaceeey</a></li>
-                            <li class="project"><a class="" title="(No)name" href="noname.jovana.ninja">(No)name</a></li>
+                            <li class="project"><a class="" title="Astal" href="https://www.astal.rs" target="_blank">Astal</a></li>
+                            <li class="project"><a class="" title="Rujji Design" href="http://rujji.desing" target="_blank">Rujji Design</a></li>
+                            <li class="project"><a class="" title="Spaceeey" href="https://spaceeey.jovana.ninja" target="_blank">Spaceeey</a></li>
+                            <li class="project"><a class="" title="(No)name" href="https://noname.jovana.ninja" target="_blank">(No)name</a></li>
                         </ul>
                     </li>
                 </ul>
