@@ -26,31 +26,40 @@
 .sun {
     max-height: 200px;
     max-width: 200px;  
-    top: 200px;
+    top: 190px;
     transform: translate(-50%);
 }
 
 .back_clouds {
     max-width: 800px;
-    top: 280px;
+    top: 270px;
     left: 120px;
 }
 
 .middle_clouds {
-    max-width: 800px;
-    top: 480px;
-    left: 380px;
+    width: 1000px;
+    top: 460px;
+    left: 300px;;
 }
 
 svg.hill {
-    max-width: 600px;
-    min-width: 600px;
+    width: 600px;
     position: fixed;
-    top: 490px;
+    top: 460px;
     transform: translate(50%);
 
 
-    #sails path {
-        //fill: #000;
+    #sails {
+        animation: spin 6s linear infinite;
+        transform-origin: center;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 }
