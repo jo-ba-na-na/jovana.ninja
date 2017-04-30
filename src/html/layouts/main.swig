@@ -22,33 +22,32 @@
     </head>
     <body>
         
-    <div id="menu" class="menu">
-        <div class="menu_bar">
-            <a href="/index.html"><button class="menu_btn">Jovana Skoric</button></a>
-        </div>
-        
-        <a id="ham_wrap"><span class="hamburger"></span></a>
+        <div id="menu" class="menu">
+            <div class="menu_bar">
+                <a href="/index.html"><button class="menu_btn">Jovana Skoric</button></a>
+            </div>
+            
+            <a id="ham_wrap"><span class="hamburger"></span></a>
 
-        <div class="side_menu">
-            <nav>
-                <ul>
-                    {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
-                    <li class="menu_items"><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="/about/index.html">about</a></li>
-                    <li class="menu_items">
-                        <a {% if active_page == "projects" %} class="active" {% endif %} title="projects" href="#">projects</a>
-                        <ul>
-                            <li class="project"><a class="" title="Astal" href="https://www.astal.rs" target="_blank">Astal</a></li>
-                            <li class="project"><a class="" title="Rujji Design" href="http://www.rujji.design" target="_blank">Rujji Design</a></li>
-                            <li class="project"><a class="" title="Spaceeey" href="https://spaceeey.jovana.ninja" target="_blank">Spaceeey</a></li>
-                            <li class="project"><a class="" title="(No)name" href="https://noname.jovana.ninja" target="_blank">(No)name</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-        
-        
+            <div class="side_menu">
+                <a id="x_wrap"><span class="x"></span></a>
+                <nav>
+                    <ul>
+                        {% set active_page = BASE_URI | replace('^([^/]+)/.+$', '$1') %}
+                        <li class="menu_items"><a {% if active_page == "about" %} class="active" {% endif %} title="about"  href="/about/index.html">about</a></li>
+                        <li class="menu_items">
+                            <a {% if active_page == "projects" %} class="active" {% endif %} title="projects" href="#">projects</a>
+                            <ul>
+                                <li class="project"><a class="" title="Astal" href="https://www.astal.rs" target="_blank">Astal</a></li>
+                                <li class="project"><a class="" title="Rujji Design" href="http://www.rujji.design" target="_blank">Rujji Design</a></li>
+                                <li class="project"><a class="" title="Spaceeey" href="https://spaceeey.jovana.ninja" target="_blank">Spaceeey</a></li>
+                                <li class="project"><a class="" title="(No)name" href="https://noname.jovana.ninja" target="_blank">(No)name</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>     
         
         <div class="middle_content_wrapper">
             {% block page_content %}{% endblock %}
@@ -113,6 +112,9 @@
             </div>          
         </footer>
         
+        <div id="overlay">
+        </div>
+
         <script src="../js/waves.js"></script>
         <script src="../js/menu.js"></script>
         {% block scripts %}{% endblock %}

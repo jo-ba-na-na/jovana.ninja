@@ -17,9 +17,10 @@
     position: fixed;
 }
 
-.layer img {
+.layer img, .layer svg {
     display: inline-block;
     position: absolute;
+    width: 100%;
 }
 
 
@@ -27,7 +28,7 @@
     max-height: 200px;
     max-width: 200px;  
     top: 190px;
-    transform: translate(-50%);
+    //transform: translate(-50%);
 }
 
 .back_clouds {
@@ -37,16 +38,16 @@
 }
 
 .middle_clouds {
-    width: 1000px;
+    max-width: 1000px;
     top: 460px;
     left: 300px;;
 }
 
 svg.hill {
-    width: 600px;
-    position: fixed;
+    max-width: 600px;
+    //position: fixed;
     top: 460px;
-    transform: translate(50%);
+    //transform: translate(50%);
 
 
     #sails {
