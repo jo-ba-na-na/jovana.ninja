@@ -9,12 +9,8 @@
 						<li class="layer" data-depth="0.10"><img class="back_cloud" src="images/back_cloud.png"/></li>
 						<li class="layer" data-depth="0.40"><img class="middle_cloud" src="images/middle_cloud.png"/></li>
 						<li class="layer" data-depth="0.30">
-							
-							
-								<img class="windmill" src="images/windmill.png"/>
-								<img class="sails" src="images/sails.png"/>
-						
-
+							<img class="windmill" src="images/windmill.png"/>
+							<img class="sails" src="images/slice.png"/>
 						</li>
 					</ul>
 				</div>

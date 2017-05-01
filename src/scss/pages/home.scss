@@ -21,6 +21,7 @@
     left: 0;
     top: 0;
     text-align: center;
+    width: 100%;
 }
 
 .layer img {
@@ -30,19 +31,17 @@
 
 
 .sails {
-    animation: spin 6s linear infinite;
-    transform-origin: center;
-    position: absolute;
-    display: block;
+    animation: spin 10s linear infinite;
+    transform-origin: 50% 60.38%;
     width: 100%;
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform:  translateY(-100%) rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform:  translateY(-100%) rotate(360deg);
     }
 }
 
