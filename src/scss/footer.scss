@@ -5,9 +5,9 @@ footer {
     width: 100%;
 
     .footer_img {
-        background: no-repeat url('../images/front_cloud.png') top center;
+        background: repeat-x url('../images/footer_cloud.png') center top;
         background-size: 1200px;
-        height: 120px;  
+        height: 120px;
     }
 
     p {

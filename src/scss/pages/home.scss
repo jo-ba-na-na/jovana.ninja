@@ -1,66 +1,49 @@
 .empty_div {
     min-height: 600px;
-    min-width: 1200px;
-    max-width: 1500px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
     position: relative;
     visibility: hidden;
 }
 
 .container {
     min-height: 600px;
-    min-width: 1200px;
-    max-width: 1500px;  
-    margin: 0 auto;
-    text-align: center;
+    max-width: 1200px;    
+    width: 100%;
+    height: 100%;
     position: fixed;
+    padding-top: 200px;
 }
 
-.layer img, .layer svg {
-    display: inline-block;
+.layer {
     position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.layer img {
+    max-width: 1200px;
     width: 100%;
 }
 
 
-.sun {
-    max-height: 200px;
-    max-width: 200px;  
-    top: 190px;
-    //transform: translate(-50%);
+.sails {
+    animation: spin 6s linear infinite;
+    transform-origin: center;
+    position: absolute;
+    display: block;
+    width: 100%;
 }
 
-.back_clouds {
-    max-width: 800px;
-    top: 270px;
-    left: 120px;
-}
-
-.middle_clouds {
-    max-width: 1000px;
-    top: 460px;
-    left: 300px;;
-}
-
-svg.hill {
-    max-width: 600px;
-    //position: fixed;
-    top: 460px;
-    //transform: translate(50%);
-
-
-    #sails {
-        animation: spin 6s linear infinite;
-        transform-origin: center;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+    100% {
+        transform: rotate(360deg);
     }
 }
+
+
