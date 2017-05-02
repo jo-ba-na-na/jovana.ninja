@@ -24,6 +24,7 @@ gulp.task('watch', ['watch:css', 'watch:img', 'watch:js', 'watch:html']);
 gulp.task('serve', ['watch'], function() {
     connect.server({
         port: 1234,
+        host: '127.0.0.1',
         root: './public',
         livereload: true,
     });
