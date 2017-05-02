@@ -1,6 +1,7 @@
 .empty_div {
     min-height: 600px;
     max-width: 1200px;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
     position: relative;
@@ -9,23 +10,27 @@
 
 .container {
     min-height: 600px;
-    max-width: 1200px;    
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;    
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
     height: 100%;
     position: fixed;
-    padding-top: 200px;
+    padding-top: 13%;
+    overflow: hidden;
 }
 
 .layer {
     position: absolute;
-    left: 0;
     top: 0;
     text-align: center;
     width: 100%;
+    min-width: 1200px;
 }
 
 .layer img {
-    max-width: 1200px;
+    max-width: 1200px;  
     width: 100%;
 }
 
@@ -45,4 +50,21 @@
     }
 }
 
+@media (max-width: 500px) {
+    .empty_div {
+        min-height: 400px;
+    }
+    .container {
+        padding-top: 30%
+    }
+    .layer img {
+        max-width: 700px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .empty_div {
+        min-height: 300px;
+    }
+}
 

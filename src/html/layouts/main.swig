@@ -20,11 +20,11 @@
         <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
     </head>
-    <body>
+    <body class=" {% block body_class %}{% endblock %} ">
         
         <div id="menu" class="menu">
             <div class="menu_bar">
-                <a href="/index.html"><button class="menu_btn">Jovana Skoric</button></a>
+                <a href="/index.html"><span class="menu_btn" title="Jovana Skoric"></span></a>
             </div>
             
             <a id="ham_wrap"><span class="hamburger"></span></a>

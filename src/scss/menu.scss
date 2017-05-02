@@ -1,18 +1,20 @@
 .menu_btn {
     border: 3px solid #fff;
     border-radius: 10px;
-    width: 180px;
     @include h_font_style(20px, #fff, 400);
     background-color: transparent;
-    padding: 5px 10px;
+    padding: 10px;
     position: relative;
     top: 10px;
     right: 20px;
     margin: 0;
-    height: 50px;
     cursor: pointer;
     outline: none;
     display: inline-block;
+}
+
+.menu_btn::before {
+    content: attr(title);
 }
 
 .menu_bar {
@@ -210,6 +212,21 @@
     visibility: visible;
     pointer-events: none;
 }
+// -------------media queries
 
 
+@media (max-width: 800px) {
+    .menu_open .side_menu {
+        width: 350px;
+    } 
+}
+
+@media (max-width: 500px) {
+    .menu_open .side_menu {
+        width: 280px;
+    } 
+    .menu_btn::before {
+        content: 'JS';
+    }
+}
 
